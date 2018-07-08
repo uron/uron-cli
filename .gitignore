@@ -4,7 +4,8 @@
 ### Code ###
 # Visual Studio Code - https://code.visualstudio.com/
 .settings/
-.vscode/
+.vscode/*
+!.vscode/launch.json
 tsconfig.json
 jsconfig.json
 
