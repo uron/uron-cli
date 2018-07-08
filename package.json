@@ -1,0 +1,49 @@
+{
+  "name": "uron-cli",
+  "version": "0.0.1",
+  "description": "uron cli",
+  "bin": {
+    "uron": "bin/uron",
+    "uron-list": "bin/uron-list",
+    "uron-init": "bin/uron-init"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uron/uron-cli.git"
+  },
+  "keywords": [
+    "koa",
+    "uron",
+    "full-openstack"
+  ],
+  "author": "lingximu(lingxiweb@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uron/uron-cli/issues"
+  },
+  "homepage": "https://github.com/uron/uron-cli#readme",
+  "dependencies": {
+    "async": "^2.6.1",
+    "chalk": "^2.4.1",
+    "commander": "^2.16.0",
+    "consolidate": "^0.15.1",
+    "download-git-repo": "^1.0.2",
+    "handlebars": "^4.0.11",
+    "inquirer": "^6.0.0",
+    "metalsmith": "^2.3.0",
+    "minimatch": "^3.0.4",
+    "multimatch": "^2.1.0",
+    "ora": "^2.1.0",
+    "read-metadata": "^1.0.0",
+    "request": "^2.87.0",
+    "rimraf": "^2.6.2",
+    "semver": "^5.5.0",
+    "tildify": "^1.2.0",
+    "user-home": "^2.0.0",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}

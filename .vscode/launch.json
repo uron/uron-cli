@@ -1,0 +1,55 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "node file",
+            "runtimeExecutable": "node",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "DEBUG": "*",
+                "NODE_ENV": "development",
+                "DEBUG_COLORS": "true",
+                "FORCE_COLOR": "1",
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "uron-init-person",
+            "cwd": "${workspaceRoot}",
+            "runtimeExecutable": "node",
+            "args": ["${workspaceRoot}/bin/uron-init","person#develop","my-project"],
+            "console": "integratedTerminal",
+            "env": {
+                "DEBUG": "*",
+                "NODE_ENV": "development",
+                "DEBUG_COLORS": "true",
+                "FORCE_COLOR": "1",
+                "ONLY_NODE":"true",
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "uron-init-person-local",
+            "cwd": "${workspaceRoot}",
+            "runtimeExecutable": "node",
+            "args": ["${workspaceRoot}/bin/uron-init","--offline","person#local","my-project"],
+            "console": "integratedTerminal",
+            "env": {
+                "DEBUG": "*",
+                "NODE_ENV": "development",
+                "DEBUG_COLORS": "true",
+                "FORCE_COLOR": "1",
+                "ONLY_NODE":"true",
+            }
+        }
+
+    ]
+}
