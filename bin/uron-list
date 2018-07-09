@@ -35,6 +35,7 @@ request({
         ' - ' + repo.description)
     })
   } else {
+    // API rate limit exceeded: https://gist.github.com/christopheranderton/8644743
     console.error(requestBody.message)
   }
 })
